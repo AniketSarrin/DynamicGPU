@@ -2,7 +2,7 @@ GPU/CPU Orchestration Framework
 
 ## Problem Statement
 
-The primary challenge addressed by KubeAI is the reduction of idle time for GPUs in Kubernetes environments. When GPUs are assigned to Kubernetes tasks, they often remain idle after task completion, leading to inefficient resource utilization. KubeAI aims to create a framework or service that optimizes GPU usage by dynamically managing and reallocating these resources.
+The primary challenge addressed by this project is the reduction of idle time for GPUs in Kubernetes environments. When GPUs are assigned to Kubernetes tasks, they often remain idle after task completion, leading to inefficient resource utilization. We aim to create a framework or service that optimizes GPU usage by dynamically managing and reallocating these resources.
 
 ## Overview
 
@@ -17,14 +17,13 @@ Key features include:
 - Integration with Grafana and Prometheus for advanced monitoring and visualization
 - Support for various AI frameworks and Jupyter notebook instances
 
-KubeAI allows for close monitoring of GPU memory and temperature, enabling appropriate actions to be taken based on these metrics.
 
 ## Architecture Diagram
 ![image](https://github.com/user-attachments/assets/02f4c8a4-d876-47c8-8d90-de19bfe8e3e5)
 
 ## Installation
 
-To set up the KubeAI environment, follow these installation steps for the required components:
+To set up the environment, follow these installation steps for the required components:
 
 1. Docker:
    ```
@@ -83,7 +82,7 @@ To set up the KubeAI environment, follow these installation steps for the requir
 
 ## Usage
 
-To run the KubeAI application:
+To run the application:
 
 1. Start the frontend:
    ```
@@ -103,19 +102,19 @@ To run the KubeAI application:
 
 **2. Docker:** Provides containerization technology, allowing applications to be packaged with their dependencies and run in isolated environments.
 
-**3. AWS:** Cloud platform used for hosting and scaling the KubeAI infrastructure.
+**3. AWS:** Cloud platform used for hosting and scaling the infrastructure.
 
 **4. Grafana:** Provides visualization and analytics for the metrics collected by Prometheus, offering customizable dashboards for monitoring GPU/CPU usage.
 
-**5. Golang:** The primary programming language used for developing the backend services of KubeAI.
+**5. Golang:** The primary programming language used for developing the backend services.
 
 **6. NVIDIA DCGM (Data Center GPU Manager):** Provides GPU telemetry and management capabilities, crucial for monitoring GPU health and performance.
 
 **7. Prometheus:** Collects and stores time-series data, used for monitoring system metrics and generating alerts.
 
-**8. GIN Framework:** A web framework written in Go, used for building the backend API of KubeAI.
+**8. GIN Framework:** A web framework written in Go, used for building the backend API.
 
-**9. Material UI:** A popular React UI framework used for designing the frontend interface of KubeAI.
+**9. Material UI:** A popular React UI framework used for designing the frontend interface .
 These components work together to create a robust system for GPU/CPU orchestration, enabling efficient resource allocation and detailed monitoring in AI and machine learning environments.
 
 # Application
